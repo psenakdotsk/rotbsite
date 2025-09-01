@@ -12,5 +12,24 @@
       <a href="https://itch.io/jam/brackeys-14/rate/3839591"><button>Rate</button></a>
       <a href="https://rotb-bugs.pages.dev/"><button>Bugs and feature requests</button></a>
     </div>
+    <hr>
+    <b>Screenshots</b>
+    <div class="flex flex-row ss scroll-box">
+      <img src="https://img.itch.zone/aW1hZ2UvMzgzOTU5MS8yMjk1MTgwNC5wbmc=/original/MRqrds.png" class="img">
+      <img src="https://img.itch.zone/aW1hZ2UvMzgzOTU5MS8yMjk3NzIyMC5wbmc=/original/nzgDHg.png" class="img">
+      <img src="https://img.itch.zone/aW1hZ2UvMzgzOTU5MS8yMjk3NzI2Mi5wbmc=/original/Y1eKSX.png" class="img">
+      <img src="https://img.itch.zone/aW1hZ2UvMzgzOTU5MS8yMjk3NzI3Ni5wbmc=/original/y7ETDi.png" class="img">
+      <img src="https://img.itch.zone/aW1hZ2UvMzgzOTU5MS8yMjk3NzQ4MS5wbmc=/original/y1Vh12.png">
+    </div>
+    <dialog id="imgdialog"><img /></dialog>
+
+    <script>
+    document.querySelectorAll(".ss img").forEach(e => {
+      e.onclick = () => {
+        document.querySelector("#imgdialog img").src = e.src
+        document.querySelector("#imgdialog").showModal()
+      }
+    })
+    </script>
   </body>
 </html>
